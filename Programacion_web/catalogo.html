@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,45 +8,113 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="java/catalogo.js" async></script>
 </head>
-
-
 <body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="#" class="nav-link">MORI</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="Inicio.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalogo.html" class="nav-link ">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="foro.html" class="nav-link ">Foro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="tiendas.html" class="nav-link ">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link ">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Perfume Perrito</span>
+                <img src="IMG/Perfume.jpg" alt="" class="img-item">
+                <span class="precio-item">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Collar  Perrito</span>
+                <img src="IMG/Collar Perrito.jpg" alt="" class="img-item">
+                <span class="precio-item">$25.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Collar Rojo</span>
+                <img src="IMG/Collar Rojo.jpg" alt="" class="img-item">
+                <span class="precio-item">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Collar Rosa</span>
+                <img src="IMG/Collar Rosa.jpg" alt="" class="img-item">
+                <span class="precio-item">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Correa estampados</span>
+                <img src="IMG/Correa estampados.webp" alt="" class="img-item">
+                <span class="precio-item">$5.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Correa Puntos</span>
+                <img src="IMG/Correa Puntos.webp" alt="" class="img-item">
+                <span class="precio-item">$8.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Pelotas</span>
+                <img src="IMG/Pelotas.jpg" alt="" class="img-item">
+                <span class="precio-item">$4.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Soga Rosa</span>
+                <img src="IMG/Soga Rosa.png" alt="" class="img-item">
+                <span class="precio-item">$2.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Peluchito</span>
+                <img src="IMG/Peluchito.jpg" alt="" class="img-item">
+                <span class="precio-item">$4.800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
-  integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
-  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" 
-  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
-  <header>
-    <div class="container">
-      <nav class="nav">
-          <div class="menu-toggle">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-times"></i>
-          </div>
-          <a href="#" class="nav-link">MORI</a>
-          <ul class="nav-list">
-              <li class="nav-item">
-                  <a href="Inicio.html" class="nav-link active">Inicio</a>
-              </li>
-              <li class="nav-item">
-                  <a href="catalogo.html" class="nav-link ">Catalogo</a>
-              </li>
-              <li class="nav-item">
-                  <a href="ofertas.html" class="nav-link ">Ofertas</a>
-              </li>
-              <li class="nav-item">
-                  <a href="carrito.html" class="nav-link ">Carrito</a>
-              </li>
-              <li class="nav-item">
-                  <a href="tiendas.html" class="nav-link ">Tiendas</a>
-              </li>
-              <li class="nav-item">
-                  <a href="contacto.html" class="nav-link ">Contacto</a>
-              </li>
-          </ul>
-      </nav>
-  </div>
-</header>
+            <div class="carrito-items">
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
