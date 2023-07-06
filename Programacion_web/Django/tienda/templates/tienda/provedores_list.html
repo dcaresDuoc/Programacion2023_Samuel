@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+        <h1>Editar Datos de Provedores</h1>
+        <br>
+
+
+        <button type="button">
+            <a href="{ url 'provedoresAdd' %}"> Agregar </a>
+        </button>
+
+        <div id="idMensajes">
+            {% if mensaje %}
+                {{mensaje}}
+            {% endif %}            
+        </div>
+
+
+
+        <table>
+            {% if provedors %}
+                <th>Rut</th>
+                <th>Nombre</th>
+                <th>Apeliido P.</th>
+                <th>Eliminar</th>
+                <th>Modificar</th>
+                {% for x in provedors}
+                    <tr>
+                        <td> {{ x.rut }}
+                        <td> {{ x.nombre }}
+                        <td> {{ x.apellido_paterno }}
+                        <td> <a href="{% url 'provedors_del' pk=x.rut %}">Eliminar</a>
+                        <td> <a href="{% url 'provedors_findEdit' pk=x.rut %}"></a>
+
+                    </tr>
+                {% endfor %} 
+            {% ednif %} 
+        </table>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#idMensajes").delay(2000).fadeOut("slow");
+        });
+    </script>
+</body>
+</html>

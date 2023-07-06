@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/CSS/style.css' %}">
+</head>
+
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+  integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" 
+  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <header>
+    <div class="container">
+      <nav class="nav">
+          <div class="menu-toggle">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+          </div>
+          <a href="#" class="nav-link">MORI</a>
+          <ul class="nav-list">
+              <li class="nav-item">
+                  <a href="Inicio.html" class="nav-link active">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a href="catalogo.html" class="nav-link ">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a href="foro.html" class="nav-link ">Foro</a>
+              </li>
+              <li class="nav-item">
+                  <a href="tiendas.html" class="nav-link ">Tiendas</a>
+              </li>
+              <li class="nav-item">
+                  <a href="contacto.html" class="nav-link ">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="provedores.html" class="nav-link ">Provedores</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link ">Salir</a>
+            </li>
+            
+          </ul>
+      </nav>
+  </div>
+</header>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1000">
+        <img src="{% static '/IMG/carrusel2.png' %}" class="d-block w-100" alt="perro">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-light">La Felicidad de tus mascotas</h2>
+          <h3 class="text-info">Aprende como hacerlos feliz con productos increibles</h3>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000" >
+        <img src="{% static '/IMG/INOVACION.png' %}" class="d-block w-100" alt="gato">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-light">INOVACION</h2>
+          <h3 class="text-info">Productos inavadores </h3>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="{% static '/IMG/Mori Un compañero de aventuras.png' %}" class="d-block w-100" alt="otro">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="text-light">Comprencion</h2>
+          <h3 class="text-info">Sabemos lo importante que son para ti </h3>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<section class="w-50 mx-auto text-center pt-5" id="intro">
+  <h1 class="p-3 fs-2 border-top border-3">Una agencia unica para todas tus nesecidaes
+    de <span class="text-primary"> COMPRAS DIGITAL</span>
+  </h1>
+  <p class="p-3 fs-4"><span class="text-primary"> MORI </span> es la unica agencia donde te ayudamos a encontrar todo lo que nesecitas de forma online
+  </p>
+</section>
+
+<section class="container-fluid">
+  <div class="row w-75 mx-auto  servicio-fila">
+
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex 
+    justify-content-start my-5 icono-wrap">
+    <img src="{% static '/IMG/Mori.png' %}" alt="Mori" width="180" height="160">
+    <div>
+      <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+      <p class="px-4">
+        Desarrollo de sjkajska sjakjska bla bla balb alb aksls  lkjsaj nsajld jlsadnjsan ldsaj n
+      </p>
+    </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 col-sm-12 d-flex 
+    justify-content-start my-5 icono-wrap">
+      <img src="{% static '/IMG/Mori.png' %}"  alt="Mori" width="180" height="160">
+      <div>
+        <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+        <p class="px-4">
+          Desarrollo de sjkajska sjakjska bla bla balb alb aksls  lkjsaj nsajld jlsadnjsan ldsaj n
+        </p>
+      </div>
+  </div>
+</div>
+
+<div class="row w-75 mx-auto  servicio-fila">
+
+  <div class="col-lg-6 col-md-12 col-sm-12 d-flex 
+  justify-content-start my-5 icono-wrap">
+  <img src="{% static '/IMG/Mori.png' %}"  alt="Mori" width="180" height="160">
+  <div>
+    <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+    <p class="px-4">
+      Desarrollo de sjkajska sjakjska bla bla balb alb aksls  lkjsaj nsajld jlsadnjsan ldsaj n
+    </p>
+  </div>
+  </div>
+
+  <div class="col-lg-6 col-md-12 col-sm-12 d-flex 
+  justify-content-start my-5 icono-wrap">
+    <img src="{% static '/IMG/Mori.png' %}"  alt="Mori" width="180" height="160">
+    <div>
+      <h3 class="fs-5 mt-4 px-4 pb-1">Desarrollo</h3>
+      <p class="px-4">
+        Desarrollo de sjkajska sjakjska bla bla balb alb aksls  lkjsaj nsajld jlsadnjsan ldsaj n
+      </p>
+    </div>
+</div>
+</div>
+
+</section>
+
+<section>
+  <div class="w-50 m-auto text-center" id="equipo">
+    <h1 class="mb-5 fs-2">Equipo peuqeño con <span class="text-primary"> 
+      resultados Grandes</span></h1>
+    <p class="fs-4">
+      Siempre buscamos las personas adecuadas para que trabajen con 
+      nosotros. si te sientes listo para este reti, te esperamos para que 
+      te unas a nosotros</p>
+
+  </div>
+</section>
+
+
+
+
+</body>
+</html>

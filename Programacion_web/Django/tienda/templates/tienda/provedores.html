@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/CSS/style.css' %}">
+</head>
+
+
+<body>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+  integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" 
+  integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <header>
+    <div class="container">
+      <nav class="nav">
+          <div class="menu-toggle">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+          </div>
+          <a href="#" class="nav-link">MORI</a>
+          <ul class="nav-list">
+              <li class="nav-item">
+                  <a href="Inicio.html" class="nav-link active">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a href="catalogo.html" class="nav-link ">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a href="foro.html" class="nav-link ">Foro</a>
+              </li>
+              <li class="nav-item">
+                  <a href="tiendas.html" class="nav-link ">Tiendas</a>
+              </li>
+              <li class="nav-item">
+                  <a href="contacto.html" class="nav-link ">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a href="provedores.html" class="nav-link ">Provedores</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a href="login.html" class="nav-link ">Salir</a>
+            </li>
+            
+          </ul>
+      </nav>
+  </div>
+</header>
+<section>
+  <div class="w-50 m-auto text-center">
+    <h1 class="mb-5 text-primary fs-2">LISTA DE PROVEDORES </h1>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table table-hover table-striped table-primary">
+    {% for provedor in provedors %} 
+    <thead>
+      
+        <th>rut</th>
+        <th>nombre</th>
+        <th>apellido_paterno</th>
+        <th>apellido_materno</th>
+        <th>id_tipo</th>
+      
+  </thead>
+    
+    <tbody>
+        
+    <td>{{provedor.rut}} </td>
+    <td>{{provedor.nombre}}</td>
+    <td>{{provedor.apellido_paterno}}</td>
+    <td>{{provedor.apellido_materno}}</td>
+    <td>{{provedor.id_tipo.tipo}} </td>
+
+  
+
+  <br>
+  {% endfor%}
+</tbody>
+</table>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</section>
+  
+
+    
+
+
+
+
+</body>
+</html>
