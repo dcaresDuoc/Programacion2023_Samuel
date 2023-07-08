@@ -2,7 +2,8 @@
 # Programacion2023_Samuel
 Para realizar este proyecto se utilizaron diferentes lenguajes de Programación, entre estos lenguajes esta;
 Python que nos permitió esquematizar nuestro proyecto, y así darle una forma más eficiente para su funcionamiento, este lenguaje nos apoyó en la creación de páginas web, le da velocidad y eficiencia, este lenguaje se implementó a través del framework Django que nos permite tener una mejor administración de nuestro proyecto e implementar una base de dato llamada sqlite3, que es una base de dato relacional de open source, es decir de código abierto y dominio público, con esta base de dato se creo es sistema de almacenaje para los datos de los proveedores de nuestra tienda. La base de datos se implementa a través de un ORM que es un sistema de Mapeo de Objeto Relacional, a continuación, podrás ver como se implementó este sistema.
-(IMG/img1.png) 
+![Imagen 1]
+(https://github.com/dcaresDuoc/Programacion2023_Samuel/blob/developer/IMG/img1.png) 
 
  
 
